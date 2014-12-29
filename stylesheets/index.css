@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/*颜色全局变量*/
+/*以颜色命名*/
+/*以颜色命名over*/
+/*以意义命名*/
+/*以意义命名over*/
+/*颜色全局变量over*/
+/*variable*/
+/*mixin*/
+/*scss*/
+/* line 42, ../scss/index.scss */
+.left {
+  float: left;
+}
+
+/* line 45, ../scss/index.scss */
+.right {
+  float: right;
+}
+
+/* line 48, ../scss/index.scss */
+.cf::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* line 53, ../scss/index.scss */
+html, body {
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 58, ../scss/index.scss */
+.bolder {
+  font-weight: bolder;
+}
+
+/* line 61, ../scss/index.scss */
+.window {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* line 66, ../scss/index.scss */
+header {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 71, ../scss/index.scss */
+header .des {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+/* line 74, ../scss/index.scss */
+header .des h1 {
+  color: #fff;
+  text-shadow: 1px 1px 0px #8dcae9, 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+/* line 78, ../scss/index.scss */
+header .des p {
+  color: #fff;
+}
+/* line 83, ../scss/index.scss */
+header .m-btn {
+  padding: 0.75rem 1.25rem;
+  border-bottom: solid 2px #00688b;
+}
+
+/* line 89, ../scss/index.scss */
+.enter-ct {
+  margin-bottom: 3rem;
+}
+/* line 92, ../scss/index.scss */
+.enter-ct .enter {
+  margin-bottom: 3rem;
+}
+/* line 95, ../scss/index.scss */
+.enter-ct .enter .ghost-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #ffa423;
+}
+/* line 102, ../scss/index.scss */
+.enter-ct .enter .ghost-btn:hover {
+  color: #fff;
+  background-color: #ef8c00;
+}
+
+/* line 111, ../scss/index.scss */
+.feature {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+/* line 113, ../scss/index.scss */
+.feature .title {
+  padding-bottom: 0rem;
+  margin-bottom: 3rem;
+  border-width: 0 0 1px;
+  border-image: linear-gradient(90deg, rgba(230, 230, 230, 0), #e6e6e6 50%, rgba(230, 230, 230, 0) 100%) 2%;
+}
+/* line 119, ../scss/index.scss */
+.feature .icon {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 1.5rem;
+}
+/* line 124, ../scss/index.scss */
+.feature h3 {
+  margin-bottom: 1.5rem;
+}
+/* line 127, ../scss/index.scss */
+.feature p {
+  margin-bottom: 3rem;
+}
+
+/* line 133, ../scss/index.scss */
+.part {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+/* line 12, ../scss/index.scss */
+.part h1 {
+  color: #fff;
+}
+/* line 15, ../scss/index.scss */
+.part p {
+  color: #fff;
+}
+/* line 137, ../scss/index.scss */
+.part .des-ct {
+  margin-bottom: 2rem;
+}
+/* line 139, ../scss/index.scss */
+.part .des-ct h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/* line 145, ../scss/index.scss */
+.part.part-1 {
+  background: #1dbb90;
+}
+/* line 149, ../scss/index.scss */
+.part.part-2 {
+  background: #41c3d3;
+}
+/* line 152, ../scss/index.scss */
+.part.part-3 {
+  background: #14b0bf;
+}
+/* line 155, ../scss/index.scss */
+.part.part-4 {
+  background: #ffaf31;
+}
+/* line 158, ../scss/index.scss */
+.part.members {
+  background: #f9f9f9;
+}
+
+/* line 163, ../scss/index.scss */
+.member-message {
+  margin-bottom: 1rem;
+}
+/* line 165, ../scss/index.scss */
+.member-message .member-portrait {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 172, ../scss/index.scss */
+.member-message .member-said {
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto 1rem 100px;
+  border-bottom: solid 3px #e6e6e6;
+  border-radius: 8px;
+  background-color: #fff;
+}
+/* line 180, ../scss/index.scss */
+.member-message .member-said::before {
+  content: "";
+  display: table;
+  position: absolute;
+  left: -1.5rem;
+  top: 1rem;
+  width: 0;
+  height: 0;
+  border-top: solid 2px transparent;
+  border-right: solid 16px #fff;
+  border-bottom: solid 8px transparent;
+  border-left: solid 8px transparent;
+}
+/* line 193, ../scss/index.scss */
+.member-message .member-said p {
+  color: #272625;
+  margin: 0px;
+}
+
+/* line 200, ../scss/index.scss */
+footer {
+  background: #222;
+}
+/* line 24, ../scss/index.scss */
+footer a {
+  color: #aaa;
+}
+/* line 26, ../scss/index.scss */
+footer a:visited {
+  color: #aaa;
+  text-decoration: underline;
+}
+/* line 30, ../scss/index.scss */
+footer a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+/* line 34, ../scss/index.scss */
+footer a:active {
+  color: #ddd;
+  text-decoration: underline;
+}
+/* line 204, ../scss/index.scss */
+footer .copyright p {
+  color: #aaa;
+  margin: 0.5rem auto;
+}

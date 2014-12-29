@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/*颜色全局变量*/
+/*以颜色命名*/
+/*以颜色命名over*/
+/*以意义命名*/
+/*以意义命名over*/
+/*颜色全局变量over*/
+/*variable*/
+/*mixin*/
+/*scss*/
+/* line 42, ../scss/index_ie6.scss */
+.left {
+  float: left;
+}
+
+/* line 45, ../scss/index_ie6.scss */
+.right {
+  float: right;
+}
+
+/* line 48, ../scss/index_ie6.scss */
+.cf::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* line 53, ../scss/index_ie6.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 56, ../scss/index_ie6.scss */
+body {
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 61, ../scss/index_ie6.scss */
+.bolder {
+  font-weight: bolder;
+}
+
+/* line 65, ../scss/index_ie6.scss */
+.top-nav-ct {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  zoom: 1;
+}
+/* line 70, ../scss/index_ie6.scss */
+.top-nav-ct li {
+  margin-right: 2rem;
+  padding: 1rem;
+}
+/* line 74, ../scss/index_ie6.scss */
+.top-nav-ct h4, .top-nav-ct a {
+  color: white;
+  text-decoration: none;
+}
+/* line 77, ../scss/index_ie6.scss */
+.top-nav-ct h4:hover, .top-nav-ct a:hover {
+  background-color: #008cba;
+  text-decoration: none;
+}
+
+/* line 84, ../scss/index_ie6.scss */
+header {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 89, ../scss/index_ie6.scss */
+header .des {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+/* line 92, ../scss/index_ie6.scss */
+header .des h1 {
+  color: #fff;
+  text-shadow: 1px 1px 0px #8dcae9, 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+/* line 98, ../scss/index_ie6.scss */
+header .m-btn {
+  padding: 0.75rem 1.25rem;
+  border-bottom: solid 2px #00688b;
+}
+
+/* line 104, ../scss/index_ie6.scss */
+.enter-ct {
+  width: 800px;
+}
+/* line 107, ../scss/index_ie6.scss */
+.enter-ct .enter {
+  margin-bottom: 3rem;
+}
+/* line 110, ../scss/index_ie6.scss */
+.enter-ct .enter .ghost-btn {
+  padding: 8px 8px;
+  border: solid 1px #fff;
+  border-radius: 4px;
+  color: #fff;
+}
+/* line 117, ../scss/index_ie6.scss */
+.enter-ct .enter .ghost-btn:hover {
+  color: #8dcae9;
+  background-color: #fff;
+}
+
+/* line 126, ../scss/index_ie6.scss */
+.feature {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+/* line 128, ../scss/index_ie6.scss */
+.feature .title {
+  padding-bottom: 0rem;
+  margin-bottom: 3rem;
+  border-width: 0 0 1px;
+  border-image: linear-gradient(90deg, rgba(230, 230, 230, 0), #e6e6e6 50%, rgba(230, 230, 230, 0) 100%) 2%;
+}
+/* line 134, ../scss/index_ie6.scss */
+.feature .icon {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 1.5rem;
+}
+/* line 139, ../scss/index_ie6.scss */
+.feature h3 {
+  margin-bottom: 1.5rem;
+}
+/* line 142, ../scss/index_ie6.scss */
+.feature p {
+  margin-bottom: 3rem;
+}
+
+/* line 148, ../scss/index_ie6.scss */
+.part {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+/* line 12, ../scss/index_ie6.scss */
+.part h1 {
+  color: #fff;
+}
+/* line 15, ../scss/index_ie6.scss */
+.part p {
+  color: #fff;
+}
+/* line 152, ../scss/index_ie6.scss */
+.part .des-ct {
+  margin-bottom: 2rem;
+}
+/* line 154, ../scss/index_ie6.scss */
+.part .des-ct h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/* line 160, ../scss/index_ie6.scss */
+.part.part-1 {
+  background: #1dbb90;
+}
+/* line 164, ../scss/index_ie6.scss */
+.part.part-2 {
+  background: #41c3d3;
+}
+/* line 167, ../scss/index_ie6.scss */
+.part.part-3 {
+  background: #14b0bf;
+}
+/* line 170, ../scss/index_ie6.scss */
+.part.part-4 {
+  background: #ffaf31;
+}
+/* line 173, ../scss/index_ie6.scss */
+.part.members {
+  background: #f9f9f9;
+}
+
+/* line 178, ../scss/index_ie6.scss */
+.btn {
+  padding: 8px 8px;
+  background-color: #008cba;
+  color: white;
+}
+
+/* line 184, ../scss/index_ie6.scss */
+footer {
+  background: #222;
+}
+/* line 24, ../scss/index_ie6.scss */
+footer a {
+  color: #aaa;
+}
+/* line 26, ../scss/index_ie6.scss */
+footer a:visited {
+  color: #aaa;
+  text-decoration: underline;
+}
+/* line 30, ../scss/index_ie6.scss */
+footer a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+/* line 34, ../scss/index_ie6.scss */
+footer a:active {
+  color: #ddd;
+  text-decoration: underline;
+}
+/* line 188, ../scss/index_ie6.scss */
+footer .copyright p {
+  color: #aaa;
+  margin: 0.5rem auto;
+}
