@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8");
-//header("Refresh:5;url=index.html");
+header("Refresh:5;url=index.html");
 $school=$_POST["school"];
 $name=$_POST["name"];
 $phone=$_POST["phone"];
