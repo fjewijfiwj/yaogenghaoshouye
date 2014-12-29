@@ -36,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_ie6.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index_ie6.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_ie6.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="273" column="0" selection-start="8530" selection-end="8530" vertical-scroll-proportion="0.88257575" vertical-offset="8183" max-vertical-offset="9146">
+            <state line="273" column="0" selection-start="8530" selection-end="8530" vertical-scroll-proportion="-8.484848" vertical-offset="8183" max-vertical-offset="9146">
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -87,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getregister.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="getregister.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getregister.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="262" selection-end="262" vertical-scroll-proportion="-12.212121" vertical-offset="0" max-vertical-offset="900">
+            <state line="32" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="1.7026515" vertical-offset="155" max-vertical-offset="1551">
               <folding />
             </state>
           </provider>
@@ -111,9 +111,9 @@
       <list>
         <option value="$PROJECT_DIR$/index - 副本.html" />
         <option value="$PROJECT_DIR$/form.html" />
-        <option value="$PROJECT_DIR$/getregister.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index_ie6.html" />
+        <option value="$PROJECT_DIR$/getregister.php" />
       </list>
     </option>
   </component>
@@ -330,13 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getregister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="262" selection-end="262" vertical-scroll-proportion="-12.212121" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="443" column="0" selection-start="14685" selection-end="14685" vertical-scroll-proportion="10.30303" vertical-offset="14073" max-vertical-offset="15036">
@@ -350,7 +343,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index_ie6.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="0" selection-start="8530" selection-end="8530" vertical-scroll-proportion="0.88257575" vertical-offset="8152" max-vertical-offset="9146">
+        <state line="273" column="0" selection-start="8530" selection-end="8530" vertical-scroll-proportion="-8.484848" vertical-offset="8183" max-vertical-offset="9146">
           <folding>
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -364,6 +357,13 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getregister.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="1.7026515" vertical-offset="155" max-vertical-offset="1551">
+          <folding />
         </state>
       </provider>
     </entry>
