@@ -1,0 +1,538 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>做最好的中学教学评价系统</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/index.css" />
+    <link rel="stylesheet" href="bower_components/wowjs/css/libs/animate.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/sign_up_log_in.css">
+    <style type="text/css">
+        *{
+            font-family:  "Microsoft YaHei";
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        window.onload=function(){
+            var browser=navigator.appName
+            var b_version=navigator.appVersion
+            var version=b_version.split(";");
+            var trim_Version=version[1].replace(/[ ]/g,"");
+            if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0")
+            {
+
+                window.location.href="teacherentry_ie6.html";
+            }
+            else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0")
+            {
+
+                window.location.href="teacherentry_ie6.html";
+            }
+            else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0")
+            {
+
+                window.location.href="teacherentry_ie6.html";
+            }
+
+
+        }
+
+
+    </script>
+
+</head>
+
+<body style="text-align: center;">
+<!-- <div class="window"> -->
+
+<!-- header -->
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#">要更好</a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>菜单</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+            <li><a href="#">产品介绍</a></li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+            <!-- <li><a href="#">最新功能</a></li> -->
+            <li class="active"><a href="register.html">免费注册GO</a></li>
+            <li><a href="student.html">登陆</a></li>
+        </ul>
+
+    </section>
+</nav>
+
+
+
+
+<div  style="margin-right: auto;margin-left: auto; width: 850px; margin-top: 50px;">
+    <div style="width: 400px;float:left; text-align: center;">
+       <h1 style="border-bottom: solid grey 1px; width: 300px; margin-right: auto;margin-left: auto;">调查版</h1>
+        <br>
+       <h3><span style="font-weight: bold;">D1调查引擎</span></h3>
+        <div style="height:5em;">
+            <p>全面了解学生、班级、科目和老师的表现</p>
+
+        </div>
+
+       <br>
+        <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">系统架构</h3>
+        <div style="height:10em;">
+            <p>单线程多向量分析引擎</p>
+            <img src="images/matlab_logo.jpg">
+
+        </div>
+
+
+        <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">系统功能</h3>
+        <div style="height:15em;">
+            <p style="margin-top: 0; margin-bottom: 1em;">学生全面评估</p>
+            <p style="margin-top: 0; margin-bottom: 1em;">班级全面评估</p>
+            <p style="margin-top: 0; margin-bottom: 1em;">教师全面评估</p>
+            <p style="margin-top: 0; margin-bottom: 1em;">科目部分评估</p>
+
+        </div>
+
+        <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">覆盖范围</h3>
+
+        <div style="height:66em;">
+            <table  style="margin-left: auto;margin-right: auto;" border="1">
+                <tr>
+                    <td>学生-科目</td>
+                    <td>兴趣爱好</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>科目重视</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>压力</td>
+                </tr>
+
+
+
+                <tr>
+                    <td>学生自身</td>
+                    <td>个人情况</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>上进心</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>个人规划</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>兴趣爱好</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>学业重视</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>压力</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>自信</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>生活习惯</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>家庭情况</td>
+                </tr>
+                <tr>
+                    <td>班级</td>
+                    <td>集体认同</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>同学关系</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>班级风气</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>班委</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>班主任</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>个人集体参与</td>
+                </tr>
+                <tr>
+                    <td>教师</td>
+                    <td>品德</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>风格</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>专业水平</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>表达能力</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>敬业态度</td>
+                </tr>
+
+
+            </table>
+
+        </div>
+
+        <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">评测时长</h3>
+        <div style="height:15em;">
+            <p style="margin-top: 0; margin-bottom: 1em;">科目：1分钟/科</p>
+            <p style="margin-top: 0; margin-bottom: 1em;">教师：2分钟/位</p>
+            <p style="margin-top: 0; margin-bottom: 1em;">学生个人情况：5分钟</p>
+            <p style="margin-top: 0; margin-bottom: 1em;">班级情况：4分钟</p>
+
+        </div>
+        <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">系统资费</h3>
+        <div style="height:10em;">
+            <p>注册后可免费使用至2015年8月</p>
+
+
+        </div>
+        <br>
+        <br>
+
+        <button  style="font-size: 2em;" onclick="window.location.href='intro/object_sim.html'">开始调查</button>
+
+
+    </div>
+
+
+    <div style="width: 400px;float:left; text-align: center;">
+        <h1 style="border-bottom: solid grey 1px; width: 300px; margin-right: auto;margin-left: auto;">挖掘版</h1>
+        <br>
+        <h3><span style="font-weight: bold;">S1挖掘引擎</span></h3>
+        <div style="height:5em; text-align: center;">
+        <p>深度挖掘教学背后的规律与问题
+            帮助学校深度探究学生、班级、科目和老师的表现与更好之道</p>
+        </div>
+
+
+        <br>
+        <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">系统架构</h3>
+        <div style="height:10em;">
+            <p>并行计算空间向量分析引擎</p>
+
+            <img src="images/cuda.jpg" style="width: 8em;">
+        </div>
+
+
+
+            <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">系统功能</h3>
+            <div style="height:15em;">
+                <p style="margin-top: 0; margin-bottom: 1em;">学生全面评估</p>
+                <p style="margin-top: 0; margin-bottom: 1em;">班级全面评估</p>
+                <p style="margin-top: 0; margin-bottom: 1em;">教师全面评估</p>
+                <p style="margin-top: 0; margin-bottom: 1em; font-weight: bold;">科目全面评估</p>
+                <p style="margin-top: 0; margin-bottom: 1em;font-weight: bold;">学生、班级、教师、科目交叉分析</p>
+
+            </div>
+
+        <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">覆盖范围</h3>
+
+        <div style="height:66em;">
+            <table  style="margin-left: auto;margin-right: auto;" border="1">
+                <tr>
+                    <td>学生-科目</td>
+                    <td>兴趣爱好</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>学业重视</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>压力</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>自信</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>科目习惯</td>
+                </tr>
+
+                <tr>
+                    <td>学生自身</td>
+                    <td>个人情况</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>上进心</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>个人规划</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>兴趣爱好</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>学业重视</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>压力</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>自信</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>生活习惯</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>家庭情况</td>
+                </tr>
+                <tr>
+                    <td>班级</td>
+                    <td>集体认同</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>同学关系</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>班级风气</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>班委</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>班主任</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>个人集体参与</td>
+                </tr>
+                <tr>
+                    <td>教师</td>
+                    <td>品德</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>风格</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>专业水平</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>表达能力</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>敬业态度</td>
+                </tr>
+
+
+            </table>
+
+        </div>
+
+
+
+
+
+
+
+        <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">评测时长</h3>
+        <div style="height:15em;">
+            <p style="margin-top: 0; margin-bottom: 1em;">科目：3分钟/科</p>
+            <p style="margin-top: 0; margin-bottom: 1em;">教师：2分钟/位</p>
+            <p style="margin-top: 0; margin-bottom: 1em;">学生个人情况：5分钟</p>
+            <p style="margin-top: 0; margin-bottom: 1em;">班级情况：4分钟</p>
+
+        </div>
+
+        <h3 style=" width:200px; margin-left:auto;margin-right:auto;font-weight: bold;border-bottom: dotted  grey 1px;">系统资费</h3>
+        <div style="height:10em;">
+            <p>注册后可免费使用至2015年8月</p>
+
+
+        </div>
+        <br>
+        <br>
+        <button  style="font-size: 2em;" onclick="window.location.href='intro/object_com.html'">开始挖掘</button>
+
+    </div>
+
+    <div style="clear:both;"></div>
+
+
+
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<section class="sign-up">
+    <div class="row">
+        <div class="columns medium-6 medium-offset-3">
+            <div class="row" style="text-align: center;">
+
+                <h2 style="margin-left: auto;margin-right: auto;">欢迎使用</h2>
+
+            </div>
+
+            <form name="reply"  method="post" action="getregister.php">
+                <div class="row">
+                    <div class="small-3 columns">
+                        <label for="right-label" class="right inline">学校</label>
+                    </div>
+                    <div class="small-7 columns end">
+                        <input type="text" id="right-label" name="school" placeholder="**中学">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-3 columns">
+                        <label for="right-label" class="right inline">联系人姓名</label>
+                    </div>
+                    <div class="small-7 columns end">
+                        <input type="text" id="right-label" name="name" placeholder="我是BeBetter 请问您是？">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-3 columns">
+                        <label for="right-label" class="right inline">联系电话</label>
+                    </div>
+                    <div class="small-7 columns end">
+                        <input type="text" id="right-label" name="phone" placeholder="139*********">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-3 columns">
+                        <label for="right-label" class="right inline">邮箱地址</label>
+                    </div>
+                    <div class="small-7 columns end">
+                        <input type="text" id="right-label" name="email" placeholder="user@xxx.com">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-3 columns">
+                        <label for="right-label" class="right inline">输入密码</label>
+                    </div>
+                    <div class="small-7 columns end">
+                        <input type="password" name="password" placeholder="请输入6位密码">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-3 columns">
+                        <label for="right-label" class="right inline">请确认密码</label>
+                    </div>
+                    <div class="small-7 columns end">
+                        <input type="password" name="password2" placeholder="请再次输入密码">
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="columns medium-6 medium-offset-3">
+                        <div class="sign-up-btn">
+                            <div class="row">
+                                <div class="columns medium-7 medium-offset-3">
+                                    <input type="submit" value="确认注册" style="font-size: 2em; margin-bottom: 20px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+</section>
+
+<footer>
+    <div class="row">
+
+    </div>
+    <div class="row">
+        <div class="columns small-12">
+            <div class="copyright text-center">
+                <p>
+                    Designed by <a href="mailto:uni.zheng.x@gmail.com">Uni.zheng.x@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- </div> -->
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+<script src="bower_components/wowjs/dist/wow.min.js"></script>
+<script>
+    wow = new WOW(
+            {
+                boxClass:     'wow',      // default
+                animateClass: 'animated', // default
+                offset:       0,          // default
+                mobile:       true,       // default
+                live:         true        // default
+            }
+    )
+    wow.init();
+</script>
+</body>
+</html>

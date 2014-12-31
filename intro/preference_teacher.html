@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+
+
+
+
+        function send(str){
+            var xmlhttp;
+            if(str!="")
+            {
+                if (window.XMLHttpRequest)
+                {// code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp=new XMLHttpRequest();
+                }
+                else
+                {// code for IE6, IE5
+                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+
+                xmlhttp.open("POST","preference.php",true);
+
+                xmlhttp.onreadystatechange=function()
+                {
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                    {
+                        var text=xmlhttp.responseText;
+                        alert(text);
+                        window.location.href="http://www.yaogenghao.com";
+                    }
+                }
+                xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                var msg="content="+str;
+                xmlhttp.send(msg);
+            }
+
+
+
+        }
+
+        function getElementsByClassName (className) {
+            var all = document.all ? document.all : document.getElementsByTagName('*');
+            var elements = new Array();
+            var number=0;
+            for (var e = 0; e < all.length; e++) {
+                if (all[e].className == className) {
+                    elements[number] = all[e];
+                    number=number+1;
+                }
+            }
+            return elements;
+        }
+        function multi_check_value(){
+
+            var searchtitle;
+            var titlename;
+            var searchinput;
+            var searchchecked;
+            var str="";
+            for(var i=1;i<100;i++ )
+            {
+                searchtitle="title"+i;
+                titlename=getElementsByClassName(searchtitle);
+                if(titlename.length==0)
+                {
+                    break;
+                }
+                //alert(name);
+                searchinput="input"+i;
+                var input=getElementsByClassName(searchinput);
+                var checked;
+                var value="";
+                for(var r=0;r<input.length;r++)
+                {
+                    if(input[r].type=="radio")
+                    {
+                        checked=input[r].checked;
+                        if (checked==true)
+                        {
+
+                            value=input[r].value;
+                            break;
+                        }
+                    }else{
+                        value+=input[r].value;
+                    }
+                }
+                if(value!=""){
+                    temp=i+"_"+value+";";
+                    str+=temp;
+                }else{
+                    var missmsg="您还有条目未完成，请继续填写 \n"+ titlename[0].innerText;
+                    str="";
+                    alert(missmsg);
+                    break;
+                }
+
+
+
+
+
+            }
+            //alert(str);
+            return str;
+
+        }
+
+        function submit(str){
+            var msg=multi_check_value();
+            send(msg);
+        }
+
+    </script>
+    <style type="text/css">
+        *{
+            font-family: "Microsoft YaHei";
+        }
+    </style>
+
+</head>
+<body style="text-align: center;margin: 0; background-color: #d9d9f3;" >
+<div class="header" style="background-color: #333333;height: 50px; margin: 0;">
+    <div style="float: left; margin-top: 10px;">
+        <a href="http://www.yaogenghao.com" style="text-decoration:none;color:white; font-size: 1.5em; margin-right: 10px;">要更好</a>
+        <a href="http://www.yaogenghao.com/register.html" style="text-decoration:none;color:white; font-size: 1.5em; margin-right: 10px;">产品介绍</a>
+    </div>
+    <div style="clear:both;"></div>
+
+</div>
+<div>
+
+    <h1>学校偏好设置系统</h1>
+
+
+    <h3>您可以在本页面中设置贵校所期待的评测方向与类型。本系统会根据您的选择生成您需要的评价体系</h3>
+    <br>
+
+
+    <h2>评测纬度设置</h2>
+    <h3>完全同意=10，完全不同意=0</h3>
+    <br>
+    <br>
+
+</div>
+
+<div class="block"style="text-align: center;"   >
+    <h2>评测纬度设置</h2>
+    <div class="item"  style="text-align: left; width:700px; margin-left:auto;margin-right: auto;"   >
+        <div class="question1" >
+            <div class="title1" >
+                <p style="font-size: 1.5em; margin-top:35px;">1. 对于我校的老师和学生，我希望得到更多关于他们的信息</p>
+            </div>
+            <div class="choice" >
+                <input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=10>10	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=9>9	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=8>8	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=7>7	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=6>6	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=5>5	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=4>4	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=3>3	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=2>2	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=1>1	<input class= "input1" style="margin-left:15px;margin-right:5px;" name=1 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question2" >
+            <div class="title2" >
+                <p style="font-size: 1.5em; margin-top:35px;">2. 我了解绝大多数老师的特点，并能把他们放在合适的岗位</p>
+            </div>
+            <div class="choice" >
+                <input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=10>10	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=9>9	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=8>8	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=7>7	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=6>6	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=5>5	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=4>4	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=3>3	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=2>2	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=1>1	<input class= "input2" style="margin-left:15px;margin-right:5px;" name=2 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question3" >
+            <div class="title3" >
+                <p style="font-size: 1.5em; margin-top:35px;">3. 我了解每个班级的特点并能给他们配备合适的老师</p>
+            </div>
+            <div class="choice" >
+                <input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=10>10	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=9>9	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=8>8	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=7>7	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=6>6	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=5>5	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=4>4	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=3>3	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=2>2	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=1>1	<input class= "input3" style="margin-left:15px;margin-right:5px;" name=3 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question4" >
+            <div class="title4" >
+                <p style="font-size: 1.5em; margin-top:35px;">4. 我们对于新入职的老师能够给他们做一个准确的评价以便进一步培养</p>
+            </div>
+            <div class="choice" >
+                <input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=10>10	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=9>9	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=8>8	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=7>7	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=6>6	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=5>5	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=4>4	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=3>3	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=2>2	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=1>1	<input class= "input4" style="margin-left:15px;margin-right:5px;" name=4 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question5" >
+            <div class="title5" >
+                <p style="font-size: 1.5em; margin-top:35px;">5. 我对于我们学校学生的优缺点、特点特长有较为准确的认知</p>
+            </div>
+            <div class="choice" >
+                <input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=10>10	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=9>9	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=8>8	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=7>7	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=6>6	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=5>5	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=4>4	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=3>3	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=2>2	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=1>1	<input class= "input5" style="margin-left:15px;margin-right:5px;" name=5 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question6" >
+            <div class="title6" >
+                <p style="font-size: 1.5em; margin-top:35px;">6. 我希望了解其他学校学生的特点，有一个横向比较</p>
+            </div>
+            <div class="choice" >
+                <input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=10>10	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=9>9	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=8>8	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=7>7	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=6>6	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=5>5	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=4>4	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=3>3	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=2>2	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=1>1	<input class= "input6" style="margin-left:15px;margin-right:5px;" name=6 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question7" >
+            <div class="title7" >
+                <p style="font-size: 1.5em; margin-top:35px;">7. 我了解我所教授的每一个学生的学习情况</p>
+            </div>
+            <div class="choice" >
+                <input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=10>10	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=9>9	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=8>8	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=7>7	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=6>6	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=5>5	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=4>4	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=3>3	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=2>2	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=1>1	<input class= "input7" style="margin-left:15px;margin-right:5px;" name=7 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question8" >
+            <div class="title8" >
+                <p style="font-size: 1.5em; margin-top:35px;">8. 我了解我所教授的每一个学生的性格，爱好，家庭等其他状况</p>
+            </div>
+            <div class="choice" >
+                <input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=10>10	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=9>9	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=8>8	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=7>7	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=6>6	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=5>5	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=4>4	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=3>3	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=2>2	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=1>1	<input class= "input8" style="margin-left:15px;margin-right:5px;" name=8 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question9" >
+            <div class="title9" >
+                <p style="font-size: 1.5em; margin-top:35px;">9. 我觉得知道每一个学生擅长的方面将会对我的教学有帮助</p>
+            </div>
+            <div class="choice" >
+                <input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=10>10	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=9>9	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=8>8	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=7>7	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=6>6	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=5>5	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=4>4	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=3>3	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=2>2	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=1>1	<input class= "input9" style="margin-left:15px;margin-right:5px;" name=9 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question10" >
+            <div class="title10" >
+                <p style="font-size: 1.5em; margin-top:35px;">10. 学生的自我评价对于我来说是一个不错的借鉴</p>
+            </div>
+            <div class="choice" >
+                <input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=10>10	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=9>9	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=8>8	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=7>7	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=6>6	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=5>5	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=4>4	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=3>3	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=2>2	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=1>1	<input class= "input10" style="margin-left:15px;margin-right:5px;" name=10 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question11" >
+            <div class="title11" >
+                <p style="font-size: 1.5em; margin-top:35px;">11. 学生对于我以及我所上的课的评价是对我的一个帮助</p>
+            </div>
+            <div class="choice" >
+                <input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=10>10	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=9>9	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=8>8	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=7>7	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=6>6	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=5>5	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=4>4	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=3>3	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=2>2	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=1>1	<input class= "input11" style="margin-left:15px;margin-right:5px;" name=11 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question12" >
+            <div class="title12" >
+                <p style="font-size: 1.5em; margin-top:35px;">12. 我和学生之间应该有更多的相互交流与进一步的相互了解</p>
+            </div>
+            <div class="choice" >
+                <input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=10>10	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=9>9	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=8>8	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=7>7	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=6>6	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=5>5	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=4>4	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=3>3	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=2>2	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=1>1	<input class= "input12" style="margin-left:15px;margin-right:5px;" name=12 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="question13" >
+            <div class="title13" >
+                <p style="font-size: 1.5em; margin-top:35px;">13. 了解班级大多数同学的共同特点有助于老师开展班级工作</p>
+            </div>
+            <div class="choice" >
+                <input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=10>10	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=9>9	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=8>8	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=7>7	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=6>6	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=5>5	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=4>4	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=3>3	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=2>2	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=1>1	<input class= "input13" style="margin-left:15px;margin-right:5px;" name=13 type="radio" value=0>0
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<button onclick="submit()" style="font-size: 2em; margin-top: 40px;margin-bottom: 40px;">提交</button>
+
+
+
+
+<div style="height: 100px; background-color: black;">
+
+</div>
+
+</body>
+</html>
