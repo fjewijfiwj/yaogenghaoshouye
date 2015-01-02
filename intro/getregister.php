@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8");
-header("Refresh:5;url=http://test.yaogenghao.com");
+header("Refresh:5;url=http://www.yaogenghao.com/intro/preference.html");
 $school=$_POST["school"];
 $name=$_POST["name"];
 $phone=$_POST["phone"];
