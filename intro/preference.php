@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8");
-header("Refresh:5;url=http://www.yaogenghao.com");
+header("Refresh:5;url='../register.html'");
 $content=$_POST["content"];
 
 $time=date('Y-m-d H:i:s');
@@ -16,7 +16,11 @@ if ($mysql->errno() != 0)
 {
     die("Error:" . $mysql->errmsg());
 }else{
-    echo "您的需求与系统偏好已经完成，工作人员将会在一个工作日联系您。非常感谢你的使用！ ";
+    echo "
+    恭喜您 \n
+
+    您的需求与系统偏好已经完成，工作人员将会在一个工作日内联系您。非常感谢你的使用！   \n
+    为您跳转至【注册页面】";
 
 }
 

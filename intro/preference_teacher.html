@@ -91,7 +91,10 @@
                     temp=i+"_"+value+";";
                     str+=temp;
                 }else{
-                    var missmsg="您还有条目未完成，请继续填写 \n"+ titlename[0].innerText;
+                    var missmsg="【学校系统偏好】\n" +
+                            "为了更好地服务贵校,请设置偏好参数 \n" +  "  \n"+"   \n"+
+                            "偏好设置未完成，请设置 \n"+ "----------------------- \n"+titlename[0].innerText+"----------------------- \n"
+                            +"非常感谢";
                     str="";
                     alert(missmsg);
                     break;
@@ -120,7 +123,7 @@
     </style>
 
 </head>
-<body style="text-align: center;margin: 0; background-color: #d9d9f3;" >
+<body style="text-align: center;margin: 0;" >
 <div class="header" style="background-color: #333333;height: 50px; margin: 0;">
     <div style="float: left; margin-top: 10px;">
         <a href="../index.html" style="text-decoration:none;color:white; font-size: 1.5em; margin-right: 10px;">要更好</a>
@@ -131,7 +134,7 @@
 </div>
 <div>
 
-    <h1>学校偏好设置系统</h1>
+    <h1><span style="font-weight: bold;font-size: 3em;">学校偏好设置系统</span>></h1>
 
 
     <h3>您可以在本页面中设置贵校所期待的评测方向与类型。本系统会根据您的选择生成您需要的评价体系</h3>
